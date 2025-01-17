@@ -1,7 +1,7 @@
 # Reddit AI Bot
 
 ## Description
-This bot uses the Groq API to generate AI-related content and posts it automatically to Reddit at a scheduled time each day. The bot posts to a specific subreddit and logs any errors that occur during the process.
+This bot uses the Groq API to generate AI-related content and posts it automatically to Reddit at a scheduled time each day. The bot posts to a specific subreddit, comments on recent posts, and logs any errors that occur during the process.
 
 ## Setup Instructions
 1. Clone this repository to your local machine:
@@ -35,8 +35,11 @@ python bot.py
 - schedule: A simple job scheduling library
 
 ## Usage
-The bot will automatically post AI-related content to the specified subreddit at the time specified in the .env file.
-Errors and logs will be recorded in the logs directory.
+The bot will automatically:
+
+- Post AI-related content to the specified subreddit at the time specified in the .env file.
+- Comment on recent posts in the subreddit, providing relevant comments.
+- Errors and logs will be recorded in the logs directory.
 
 ## License
 This project is licensed under the MIT License.
